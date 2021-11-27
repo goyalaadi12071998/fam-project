@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from playground import models
 
-@admin.register(models.VideoModel)
+@admin.register(models.YouTubeVideo)
 class VideoAdmin(admin.ModelAdmin):
     list_display = ('title', 'publishing_datetime')
     search_fields = ('title',)
